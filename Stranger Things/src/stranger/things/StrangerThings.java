@@ -5,6 +5,8 @@
  */
 package stranger.things;
 
+import byui.cit260.strangerThings.model.Player;
+
 /**
  *
  * @author sshipp57
@@ -15,10 +17,13 @@ public class StrangerThings {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Player playerOne = new Player();
         
+        playerOne.setName("Mike Wheeler");
+        playerOne.setBestTime(10.00);
         
-        // Create instances for every class
+        String playerInfo = playerOne.toString();
+        System.out.println(playerInfo);
     }
     
 }

@@ -15,19 +15,43 @@ import java.util.Objects;
 public class Character implements Serializable{
     
      //class instance variables
-    private string name;
-    private string description;
+    private String name;
+    private String description;
     private double coordinates;
 
     public Character() {
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public double getCoordinates() {
+        return coordinates;
+    }
+
+    public void setCoordinates(double coordinates) {
+        this.coordinates = coordinates;
+    }
+
     @Override
     public int hashCode() {
         int hash = 5;
-        hash = 29 * hash + Objects.hashCode(this.name);
-        hash = 29 * hash + Objects.hashCode(this.description);
-        hash = 29 * hash + (int) (Double.doubleToLongBits(this.coordinates) ^ (Double.doubleToLongBits(this.coordinates) >>> 32));
+        hash = 53 * hash + Objects.hashCode(this.name);
+        hash = 53 * hash + Objects.hashCode(this.description);
+        hash = 53 * hash + (int) (Double.doubleToLongBits(this.coordinates) ^ (Double.doubleToLongBits(this.coordinates) >>> 32));
         return hash;
     }
 
@@ -49,40 +73,15 @@ public class Character implements Serializable{
         if (!Objects.equals(this.name, other.name)) {
             return false;
         }
-        return Objects.equals(this.description, other.description);
+        if (!Objects.equals(this.description, other.description)) {
+            return false;
+        }
+        return true;
     }
 
     @Override
     public String toString() {
         return "Character{" + "name=" + name + ", description=" + description + ", coordinates=" + coordinates + '}';
     }
-            
-    public string getName() {
-        return name;
-    }
 
-    public void setName(string name) {
-        this.name = name;
-    }
-
-    public string getDescription() {
-        return description;
-    }
-
-    public void setDescription(string description) {
-        this.description = description;
-    }
-
-    public double getCoordinates() {
-        return coordinates;
-    }
-
-    public void setCoordinates(double coordinates) {
-        this.coordinates = coordinates;
-    }
-    
 }
-
-
-
-

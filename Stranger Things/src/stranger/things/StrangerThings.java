@@ -6,6 +6,13 @@
 package stranger.things;
 
 import byui.cit260.strangerThings.model.Player;
+import byui.cit260.strangerThings.model.Game;
+import byui.cit260.strangerThings.model.Character;
+import byui.cit260.strangerThings.model.Items;
+import byui.cit260.strangerThings.model.Location;
+import byui.cit260.strangerThings.model.Map;
+import byui.cit260.strangerThings.model.Questions;
+import byui.cit260.strangerThings.model.Weapon;
 
 /**
  *
@@ -24,6 +31,14 @@ public class StrangerThings {
         
         String playerInfo = playerOne.toString();
         System.out.println(playerInfo);
+        
+        Game gameOne = new Game();
+        
+        gameOne.setTotalTime(35.00);
+        gameOne.setNoPeople(1);
+        
+        String gameInfo = gameOne.toString();
+        System.out.println(gameInfo);
     }
     
 }

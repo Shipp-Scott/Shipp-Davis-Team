@@ -39,6 +39,15 @@ public class StrangerThings {
         
         String gameInfo = gameOne.toString();
         System.out.println(gameInfo);
+        
+        Character characterOne = new Character();
+        
+        characterOne.setName("Bruce");
+        characterOne.setDescription("Tall");
+        characterOne.setCoordinates(2);
+        
+        String characterInfo = characterOne.toString();
+        System.out.println(characterInfo);
     }
     
 }

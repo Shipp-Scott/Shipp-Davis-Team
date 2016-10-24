@@ -30,5 +30,22 @@ public class MapControl {
          return acceleration;
     }
     
+    public double calcFightingMonster (double mass, double velocity, double time){
+        
+        if (mass <= 0) {
+            return -1;
+                    }
+        if (velocity <= 0 || velocity > 15){
+            return -1;
+                    }
+        if (time <=0) {
+            return -1;
+                    }
+        
+        double force = (mass * velocity) / time;
+        
+        return force;
+    }
+    
     
 }

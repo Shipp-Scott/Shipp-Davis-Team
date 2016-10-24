@@ -123,5 +123,110 @@ public class MapControlTest {
         assertEquals(expResult, result, 0.0);
         
     }
-    
+
+    /**
+     * Test of calcFightingMonster method, of class MapControl.
+     */
+    @Test
+    public void testCalcFightingMonster() {
+        System.out.println("calcFightingMonster");
+        System.out.println("\tTest case #1");
+        
+        
+        double mass = 10.0;
+        double velocity = 3.0;
+        double time = 2.0;
+        
+        MapControl instance = new MapControl();
+        double expResult = 15.0;
+        
+        double result = instance.calcFightingMonster(mass, velocity, time);
+        assertEquals(expResult, result, 0.0);
+        
+        // Test 2
+        
+        System.out.println("\tTest case #2");
+        
+        mass = -1.0;
+        velocity = 3.0;
+        time = 2.0;
+        
+          
+        expResult = -1.0;
+        
+        result = instance.calcFightingMonster(mass, velocity, time);
+        assertEquals(expResult, result, 0.0);
+        
+        // Test 3
+        
+        System.out.println("\tTest case #3");
+        
+        mass = 10.0;
+        velocity = -1.0;
+        time = 2.0;
+        
+          
+        expResult = -1.0;
+        
+        result = instance.calcFightingMonster(mass, velocity, time);
+        assertEquals(expResult, result, 0.0);
+        
+        // Test 4
+        
+        System.out.println("\tTest case #4");
+        
+        mass = 50.0;
+        velocity = 35.0;
+        time = 2.0;
+        
+          
+        expResult = -1.0;
+        
+        result = instance.calcFightingMonster(mass, velocity, time);
+        assertEquals(expResult, result, 0.0);
+        
+        // Test 5
+        
+        System.out.println("\tTest case #5");
+        
+        mass = 0.0;
+        velocity = 3.0;
+        time = 2.0;
+        
+          
+        expResult = -1.0;
+        
+        result = instance.calcFightingMonster(mass, velocity, time);
+        assertEquals(expResult, result, 0.0);
+        
+        // Test 6
+        
+        System.out.println("\tTest case #6");
+        
+        mass = 10.0;
+        velocity = 0.0;
+        time = 2.0;
+        
+          
+        expResult = -1.0;
+        
+        result = instance.calcFightingMonster(mass, velocity, time);
+        assertEquals(expResult, result, 0.0);
+        
+        // Test 7
+        
+        System.out.println("\tTest case #7");
+        
+        mass = 50.0;
+        velocity = 35.0;
+        time = 2.0;
+        
+          
+        expResult = -1.0;
+        
+        result = instance.calcFightingMonster(mass, velocity, time);
+        assertEquals(expResult, result, 0.0);
+        
+    }
+   
 }

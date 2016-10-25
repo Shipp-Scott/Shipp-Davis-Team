@@ -228,5 +228,95 @@ public class MapControlTest {
         assertEquals(expResult, result, 0.0);
         
     }
+
+    /**
+     * Test of calcCombinationLock method, of class MapControl.
+     */
+    @Test
+    public void testCalcCombinationLock() {
+        System.out.println("calcCombinationLock");
+        System.out.println("\tTest case #1");
+        double randomnumber1 = 50.0;
+        double randomnumber2 = 55.0;
+        double useranswer = 80.0;
+        
+        MapControl instance = new MapControl();
+        
+        boolean expResult = true;
+        boolean result = instance.calcCombinationLock(randomnumber1, randomnumber2, useranswer);
+        assertEquals(expResult, result);
+        
+        //test 2
+        
+        
+        System.out.println("\tTest case #2");
+        randomnumber1 = 49.0;
+        randomnumber2 = 4.0;
+        useranswer = 10.0;
+        
+        
+        
+        expResult = false;
+        result = instance.calcCombinationLock(randomnumber1, randomnumber2, useranswer);
+        assertEquals(expResult, result);
+        
+        // test 3
+        
+        System.out.println("\tTest case #3");
+        randomnumber1 = 50.0;
+        randomnumber2 = 101.0;
+        useranswer = 125.0;
+        
+        
+        
+        expResult = false;
+        result = instance.calcCombinationLock(randomnumber1, randomnumber2, useranswer);
+        assertEquals(expResult, result);
+        
+        //teset 4
+        
+       
+        System.out.println("\tTest case #4");
+        randomnumber1 = 50.0;
+        randomnumber2 = 6.0;
+        useranswer = -4.0;
+        
+        
+        
+        expResult = false;
+        result = instance.calcCombinationLock(randomnumber1, randomnumber2, useranswer);
+        assertEquals(expResult, result);
+        
+        //test5
+        
+        
+        System.out.println("\tTest case #5");
+        randomnumber1 = 50.0;
+        randomnumber2 = 50.0;
+        useranswer = 75.0;
+        
+        
+        
+        expResult = true;
+        result = instance.calcCombinationLock(randomnumber1, randomnumber2, useranswer);
+        assertEquals(expResult, result);
+        
+        //test 6
+        
+        
+        System.out.println("\tTest case #6");
+        randomnumber1 = 100.0;
+        randomnumber2 = 100.0;
+        useranswer = 150.0;
+        
+        
+        
+        expResult = true;
+        result = instance.calcCombinationLock(randomnumber1, randomnumber2, useranswer);
+        assertEquals(expResult, result);
+        
+    }
+
+    
    
 }

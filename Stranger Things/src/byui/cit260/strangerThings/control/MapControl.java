@@ -47,5 +47,26 @@ public class MapControl {
         return force;
     }
     
+    public boolean calcCombinationLock(double randomnumber1, double randomnumber2, double useranswer){
+        
+              
+        if (randomnumber1 < 50){
+            return false; 
+        }
+        if (randomnumber2 < 50){
+            return false;
+        }
+        
+        if (useranswer < 75 || useranswer > 150){
+            return false;
+        }
+        
+        double combination = randomnumber1 / 2 + randomnumber2;
+        
+        return combination == useranswer;
+        }
+
+    }
     
-}
+    
+

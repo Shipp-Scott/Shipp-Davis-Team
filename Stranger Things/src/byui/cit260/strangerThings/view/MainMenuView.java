@@ -9,7 +9,7 @@ package byui.cit260.strangerThings.view;
  *
  * @author sshipp57
  */
-class MainMenuView {
+public class MainMenuView {
 
     void displayMainMenuView() {
         System.out.println("\n*** displayMenu() function called ***");

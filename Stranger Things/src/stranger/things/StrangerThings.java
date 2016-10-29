@@ -5,14 +5,9 @@
  */
 package stranger.things;
 
-import byui.cit260.strangerThings.model.Player;
 import byui.cit260.strangerThings.model.Game;
-import byui.cit260.strangerThings.model.Character;
-import byui.cit260.strangerThings.model.Items;
-import byui.cit260.strangerThings.model.Location;
-import byui.cit260.strangerThings.model.Map;
-import byui.cit260.strangerThings.model.Questions;
-import byui.cit260.strangerThings.model.Weapon;
+import byui.cit260.strangerThings.model.Player;
+import byui.cit260.strangerThings.view.StartProgramView;
 
 /**
  *
@@ -20,34 +15,32 @@ import byui.cit260.strangerThings.model.Weapon;
  */
 public class StrangerThings {
 
+    private static Game currentGame = null;
+
+    public static Game getCurrentGame() {
+        return currentGame;
+    }
+
+    public static void setCurrentGame(Game currentGame) {
+        StrangerThings.currentGame = currentGame;
+    }
+
+    public static Player getPlayer() {
+        return player;
+    }
+
+    public static void setPlayer(Player player) {
+        StrangerThings.player = player;
+    }
+    private static Player player = null;
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Player playerOne = new Player();
-        
-        playerOne.setName("Mike Wheeler");
-        playerOne.setBestTime(10.00);
-        
-        String playerInfo = playerOne.toString();
-        System.out.println(playerInfo);
-        
-        Game gameOne = new Game();
-        
-        gameOne.setTotalTime(35.00);
-        gameOne.setNoPeople(1);
-        
-        String gameInfo = gameOne.toString();
-        System.out.println(gameInfo);
-        
-        Character characterOne = new Character();
-        
-        characterOne.setName("Bruce");
-        characterOne.setDescription("Tall");
-        characterOne.setCoordinates(2);
-        
-        String characterInfo = characterOne.toString();
-        System.out.println(characterInfo);
+       // create StartProgramViewOrig and display the start program view
+        StartProgramView startProgramView = new StartProgramView();
+        startProgramView.displayStartProgramView();
     }
     
 }

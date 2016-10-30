@@ -91,23 +91,42 @@ public class HelpMenuView {
     }
 
     private void goalGame() {
-        System.out.println("*** goalGame function called");
+        System.out.println("\nThe three main characters are Mike, Dustin, "
+                + "\nand Lucas are out on an Adventure because they lost Eleven"
+                + "\nThey are out in the woods with the monster, other creatures, and other "
+                + "\nobstacles such as government officials and the Sheriff. You will explore "
+                + "\nthe map seeking required items in order to destroy the monster while avoiding "
+                + "\nthe Sheriff and the government. Using simple commands you will move your characters "
+                + "\nin order to complete the tasks that are needed to complete the game. Take one wrong "
+                + "\nturn the game is OVER!");
     }
 
     private void backStory() {
-        System.out.println("*** backStory function called");
+        System.out.println("\nStranger things is an American science fiction-horror"
+                + "\nweb television series created by the Duffer Brothers. "
+                + "\nThe plot follows the disappearance of a young boy, and a "
+                + "\ntelekinetic girl who helps his friends in their search, while "
+                + "\nthe boy's older brother, his mother, and the town police chief "
+                + "\nstart their own investigations");
     }
 
     private void howToMove() {
-        System.out.println("*** howToMove function called");
+        System.out.println("\nCharacters will all be moving together "
+                + "\none space at a time. The arrow keys on the keyboard "
+                + "\nwill be used to move the team/characters.");
     }
 
     private void listInventoryMap() {
-        System.out.println("*** listInventoryMap function called");
+        System.out.println("\nThe list of inventory on the map shows you what "
+                + "\nitems you have on the map to make weapons but doesn’t show you "
+                + "\nthe location of these items on the map.");
     }
 
     private void howToManufacture() {
-        System.out.println("*** howToManufacture function called");
+        System.out.println("\nThroughout the game, objects for making weapons will "
+                + "\nbe at randomized places on the map. You are to gather as many "
+                + "\nobjects as possible without getting caught by the sheriff, government "
+                + "\nand monster. The more objects you have, the more powerful your weapon becomes.");
     }
   
 }

@@ -93,8 +93,9 @@ public class MainMenuView {
         
         GameControl.createNewGame(StrangerThings.getPlayer());
         
+        
         GameMenuView gameMenu = new GameMenuView();
-        gameMenu.displayMenu();
+        gameMenu.displayGameMenu();
     }
 
     private void saveGame() {

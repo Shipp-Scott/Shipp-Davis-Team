@@ -83,7 +83,7 @@ public class GameMenuView {
                 this.saveGame();
                 break;
             case "H":
-                this.viewHelpMenu();
+                this.displayHelpMenu();
                 break;
             case "W":
                 this.manufactureWeapon();
@@ -122,9 +122,10 @@ public class GameMenuView {
 
     }
 
-    private void viewHelpMenu() {
-        System.out.println("\n*** viewHelpMenu stub function called ***");
-
+    private void displayHelpMenu() {
+        HelpMenuView helpMenuView = new HelpMenuView();
+        
+        helpMenuView.displayHelpMenuView();
     }
 
     private void manufactureWeapon() {

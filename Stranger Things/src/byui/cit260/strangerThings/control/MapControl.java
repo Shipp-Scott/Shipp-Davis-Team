@@ -1,4 +1,4 @@
-/*
+ /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -11,7 +11,7 @@ package byui.cit260.strangerThings.control;
  */
 public class MapControl {
     
-    public double calcRunningAway (double finalvelocity, double initialvelocity, double time){
+    public static double calcRunningAway (double finalvelocity, double initialvelocity, double time){
     
         if (finalvelocity <= 0) {
                 return -1;
@@ -30,7 +30,7 @@ public class MapControl {
          return acceleration;
     }
     
-    public double calcFightingMonster (double mass, double velocity, double time){
+    public static double calcFightingMonster (double mass, double velocity, double time){
         
         if (mass <= 0) {
             return -1;
@@ -47,7 +47,7 @@ public class MapControl {
         return force;
     }
     
-    public boolean calcCombinationLock(double randomnumber1, double randomnumber2, double useranswer){
+    public static boolean calcCombinationLock(double randomnumber1, double randomnumber2, double useranswer){
         
               
         if (randomnumber1 < 50){

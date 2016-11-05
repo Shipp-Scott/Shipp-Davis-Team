@@ -26,7 +26,7 @@ public class GameMenuView {
               + "\nS - Save Game                            "
               + "\nH - Help Menu                            "
               + "\nW - Manufacture Weapon                   "
-              + "\nL - Look for items                       "
+              + "\nR - Run Away from Monster                "
               + "\nT - View Weapon Status                   "
               + "\nQ - Quit                                 "
               + "\n-----------------------------------------";

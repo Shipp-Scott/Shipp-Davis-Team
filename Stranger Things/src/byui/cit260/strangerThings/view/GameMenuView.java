@@ -134,8 +134,9 @@ public class GameMenuView {
     }
 
     private void lookItems() {
-        System.out.println("\n*** lookItems stub function called ***");
-
+        
+        RunningAwayView runMonster = new RunningAwayView();
+        runMonster.displayRunningAwayView();
     }
 
     private void weaponStatus() {

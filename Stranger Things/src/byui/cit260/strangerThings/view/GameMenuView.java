@@ -88,7 +88,7 @@ public class GameMenuView {
             case "W":
                 this.manufactureWeapon();
                 break;
-            case "L":
+            case "R":
                 this.lookItems();
                 break;
             case "T":
